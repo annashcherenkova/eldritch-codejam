@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-width: 480px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background: url("../home.png") center/cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .state__count {
+    height: 100px;
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px solid rgb(255, 0, 0);
+  }
+
+  .f__anc {
+    display: grid;
+    /* justify-items: center; */
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px 400px;
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+
+  .anc {
+    width: 400px;
+    height: 600px;
+    margin: 0px 10px;
+  }
+
+  .anc__az {
+    background-color: blue;
+    background-image: url("../Ancients/Azathoth.png");
+    background-size: cover;
+  }
+
+  .anc__ct {
+    background-color: brown;
+    background-image: url("../Ancients/Cthulthu.png");
+    background-size: cover;
+  }
+
+  .anc__io {
+    background-color: red;
+    background-image: url("../Ancients/IogSothoth.png");
+    background-size: cover;
+  }
+
+  .anc__sh{
+    background-color: green;
+    background-image: url("../Ancients/ShubNiggurath.png");
+    background-size: cover;
+  }
+
+  .f__lvl {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+  }
+
+  .lvl {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lvl__very__easy {
+    background-color: blue;
+  } 
+
+  .lvl__easy {
+    background-color: blue;
+  }
+
+  .lvl__normal {
+    background-color: brown;
+  }
+
+  .lvl__high {
+    background-color: brown;
+  }
+
+  .lvl__hard {
+    background-color: red;
+  }
+
+  .selected {
+    background-color: aqua;
+    border: 6px solid rgb(255, 0, 0);
+  }
+
+  .button {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background: #0D606F;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 26px;
+}
+
+.button:hover {
+    background: #106f0d;
+    transform: scale(1.1);
+}
+
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .cards__all {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  .card {
+    width: 280px;
+    height: 410px;
+  }
+
+
+  .blue {
+    background-image: url("");
+    background-size: cover;
+    border: 6px solid rgb(0, 17, 255);
+  }
+
+  .green {
+    background-image: url("");
+    background-size: cover;
+    border: 6px solid rgb(0, 255, 0);
+  }
+  
+  .brown {
+    background-image: url("");
+    background-size: cover;
+    border: 6px solid rgb(133, 43, 2);
+  }
